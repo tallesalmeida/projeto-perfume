@@ -95,6 +95,10 @@ img {
     color: hsl(228, 12%, 48%);
 }
 
+.precos {
+    display: flex;
+    align-items: center;
+}
 #preco1 {
     font-size: 30px;
     font-family: 'Fraunces';
@@ -109,7 +113,7 @@ img {
     margin-left: 30px;
 }
 
-.conteudo-escrito > div {
+.conteudo-escrito > .link {
     margin-top: 15px;
     text-align: center;
     background-color: hsl(158, 36%, 37%);
@@ -125,7 +129,7 @@ img {
     font-weight: 700;
 }
 
-.conteudo-escrito > div:hover {
+.conteudo-escrito > .link:hover {
     cursor: pointer;
     background-color: hsl(228, 12%, 48%);
 }
