@@ -1,0 +1,131 @@
+@charset "UTF-8";
+
+/*The designs were created to the following widths:
+
+- Mobile: 375px
+- Desktop: 1440px
+
+Cores:
+### Primary
+
+- Dark cyan: hsl(158, 36%, 37%)
+- Cream: hsl(30, 38%, 92%)
+
+### Neutral
+
+- Very dark blue: hsl(212, 21%, 14%)
+- Dark grayish blue: hsl(228, 12%, 48%)
+- White: hsl(0, 0%, 100%)
+
+- Font size (paragraph): 14px
+
+### Font
+
+- Family: [Montserrat](https://fonts.google.com/specimen/Montserrat)
+- Weights: 500, 700
+
+- Family: [Fraunces](https://fonts.google.com/specimen/Fraunces)
+- Weights: 700*/
+
+/*Mobile First*/
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background-color: hsl(30, 38%, 92%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.img {
+    padding-top: 21px;
+    width: 340px;
+    height: 260px;
+}
+
+img {
+    width: 340px;
+    height: 240px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.parte-baixo {
+    background-color: hsl(0, 0%, 100%);
+    width: 340px;
+    height: 340px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.conteudo-escrito {
+    padding: 25px;
+}
+
+.conteudo-escrito > h1 {
+    font-size: 14px;
+    font-weight: 500;
+    text-transform: uppercase;
+    font-family: 'Montserrat';
+    margin-bottom: 5px;
+}
+
+.conteudo-escrito > h2 {
+    font-size: 30px;
+    font-family: 'Fraunces';
+    margin-bottom: 15px;
+}
+
+.conteudo-escrito > p {
+    font-size: 15px;
+    font-family: 'Montserrat';
+    font-weight: 500;
+    margin-bottom: 15px;
+    color: hsl(228, 12%, 48%);
+}
+
+#preco1 {
+    font-size: 30px;
+    font-family: 'Fraunces';
+    color: hsl(158, 36%, 37%);
+}
+
+#preco2 {
+    display: inline-block;
+    font-family: 'Montserrat';
+    font-size: 14px;
+    text-decoration: line-through;
+    margin-left: 30px;
+}
+
+.conteudo-escrito > div {
+    margin-top: 15px;
+    text-align: center;
+    background-color: hsl(158, 36%, 37%);
+    padding: 13px;
+    border-radius: 10px;
+}
+
+.conteudo-escrito a {
+    color: hsl(0, 0%, 100%);
+    text-decoration: none;
+    font-family: 'Montserrat';
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.conteudo-escrito > div:hover {
+    cursor: pointer;
+    background-color: hsl(228, 12%, 48%);
+}
